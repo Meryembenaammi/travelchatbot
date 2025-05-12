@@ -39,20 +39,32 @@ GEMINI_API_KEY=ta_clé_api_gemini
 MONGODB_URI=ton_url_mongodb
 PORT=3000
 
-2)  Lancer le projet localement :
 
-Lancer le Backend (Node.js) :
+```
+
+## 2) Lancer le projet localement
+
+### Lancer le Backend (Node.js)
 
 Pour démarrer le serveur backend, exécutez la commande suivante :
 
-bash
+```bash
 cd backend && npm install && node index.js
+```
 
- Lancer le Frontend (Flutter) :
-Pour démarrer l'application , exécutez la commande suivante :
+### Lancer le Frontend (Flutter)
 
-bash
-cd flutter_application && flutter pub get && flutter run
+Assurez-vous d’avoir Flutter installé. Ensuite, exécutez les commandes suivantes :
+
+```bash
+cd flutter_application
+flutter pub get
+flutter run -d chrome
+```
+
+> Remarque : `-d chrome` permet de lancer l’application Flutter Web dans votre navigateur.
+
+
 
 
 
