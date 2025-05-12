@@ -39,4 +39,17 @@ MONGODB_URI=ton_url_mongodb
 PORT=3000
 
 
+### 🖥Lancer le Backend (Node.js)
+
+Pour démarrer le serveur backend, exécutez la commande suivante :
+
+bash:
+cd backend && npm install && node index.js
+
+### Lancer le Frontend (Flutter)
+
+Pour démarrer l'application mobile, exécutez la commande suivante :
+
+```bash
+cd flutter_application && flutter pub get && flutter run
 
