@@ -10,46 +10,52 @@ Application mobile intelligente de chatbot de voyage, avec un backend Node.js ut
 ## Structure du projet
 
 PROJET_INTERGRE/
-├── backend/ → Node.js + Gemini + MongoDB
-│ ├── index.js
-│ ├── .env
-│ ├── routes/
-│ ├── controllers/
-│ ├── services/
-│ └── models/
+├── backend/                 → Node.js + Gemini + MongoDB
+│   ├── index.js
+│   ├── .env
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/
+│   └── models/
 │
-└── flutter_application/ 
-├── lib/
-│ ├── main.dart
-│ ├── pages/
-│ │ └── chat_page.dart
-│ └── services/
-│ └── api_service.dart
-└── pubspec.yaml
+└── flutter_application/     → App mobile Flutter
+    ├── lib/
+    │   ├── main.dart
+    │   ├── pages/
+    │   │   └── chat_page.dart
+    │   └── services/
+    │       └── api_service.dart
+    └── pubspec.yaml
+
 
 ---
 
 ## Configuration
 
-Crée un fichier `.env` dans le dossier `backend` avec les variables suivantes :
+1) Crée un fichier `.env` dans le dossier `backend` avec les variables suivantes :
 
 ```env
 GEMINI_API_KEY=ta_clé_api_gemini
 MONGODB_URI=ton_url_mongodb
 PORT=3000
 
+2)  Lancer le projet localement :
 
-### 🖥Lancer le Backend (Node.js)
+Lancer le Backend (Node.js) :
 
 Pour démarrer le serveur backend, exécutez la commande suivante :
 
-bash:
+bash
 cd backend && npm install && node index.js
 
-### Lancer le Frontend (Flutter)
+ Lancer le Frontend (Flutter) :
+Pour démarrer l'application , exécutez la commande suivante :
 
-Pour démarrer l'application mobile, exécutez la commande suivante :
-
-```bash
+bash
 cd flutter_application && flutter pub get && flutter run
+
+
+
+
+
 
