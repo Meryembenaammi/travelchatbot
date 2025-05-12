@@ -9,23 +9,26 @@ Application mobile intelligente de chatbot de voyage, avec un backend Node.js ut
 
 ## Structure du projet
 
+
+```
 PROJET_INTERGRE/
-├── backend/                 → Node.js + Gemini + MongoDB
+├── backend/                     → Node.js + Gemini + MongoDB
 │   ├── index.js
 │   ├── .env
 │   ├── routes/
 │   ├── controllers/
 │   ├── services/
 │   └── models/
-│
-└── flutter_application/     → App mobile Flutter
-    ├── lib/
-    │   ├── main.dart
-    │   ├── pages/
-    │   │   └── chat_page.dart
-    │   └── services/
-    │       └── api_service.dart
-    └── pubspec.yaml
+├── flutter_application/         → App mobile Flutter
+│   ├── pubspec.yaml
+│   └── lib/
+│       ├── main.dart
+│       ├── services/
+│       │   └── api_service.dart
+│       └── pages/
+│           └── chat_page.dart
+```
+
 
 
 ---
